@@ -1,0 +1,184 @@
+
+Copy of CS1 Final Project 0_ Pick a Problem(1).docx
+Document
+
+Copy of CS1 Final Project 1_ Design.docx
+Document
+Using these documents and the following instructions create a python code that meets the requirements and encompasses my idea for the program.
+
+
+Before starting on this assignment, you should review the Final Project Requirements. You may use any LLM in this assignment, but see the submission requirements.
+
+Develop & Deploy Website
+Using the design elements developed in the prior parts of the final project (linked above), code up your website using DrafterLinks to an external site..  We recommend drafting, testing, and updating the code in Thonny. Make sure you launch your website to make sure it all works. 
+
+Once you have a working prototype of your functioning website's code, deploy it to GitHub using these instructionsLinks to an external site.. Check that the deployment was successful (and that your repository is public) and troubleshoot any problems using the various methods you thought of in the prior steps. 
+
+You can still update the code after you deployed it, but you must run the deployment process again (details in the link in the prior paragraph). Make sure you make good,  short, descriptive commit messages for each update after the first one (you won't be able to update those later). You don't need to fill out the Extended description when you commit changes, but you may.
+
+Submission Requirements
+You must submit the URL of the working website deployed on the publicly visible GitHub repository.
+
+You must use the Drafter python library to build the website
+The website must meet the requirements linked at the top of this assignment. Missing two or more requirements means you might fail this assignment entirely. The same is true if your website doesn't work.
+Your repository should contain all images and other files that the website needs.
+Your repository should also contain the worksheets you used to  and  the website.
+If you use an LLM in this assignment, you must submit the every part of the conversations with the LLM as one of the files uploaded to the repository. 
+Rubric
+Final Project 2026 - part 2
+
+Total Points: 10
+
+…
+Based on your two project documents, I would build your website as a Chemistry Reaction Predictor.
+
+The goal is to create a website where chemistry students can enter two reactants and their quantities, then receive a prediction of what will happen in the reaction.
+
+I would keep the program at an introductory CISC 106 level while making sure it addresses the requirements in your design worksheet.
+
+1. How your website will work
+Your website will have six main pages and seven routes, following your design worksheet.
+
+Page
+
+Functionality
+
+Home
+
+Introduces the Chemistry Reaction Predictor.
+
+Input
+
+Allows users to enter two reactants and their amounts in moles.
+
+Results
+
+Displays the predicted reaction and calculations.
+
+History
+
+Displays previously calculated reactions.
+
+Reaction Details
+
+Displays the complete results of a previous reaction.
+
+Learn
+
+Explains the different types of chemical reactions.
+
+The program will include:
+
+Two dataclasses: State and ReactionResult.
+
+Seven routes: Home, input, calculation, results, history, reaction details, and learning.
+
+Five user input fields: Two reactants, two quantities, and reaction type.
+
+At least four conditional statements for validating input and determining results.
+
+A for loop that displays the reaction history.
+
+Helper functions to make the chemistry calculations easier to understand.
+
+One important design decision: rather than attempting to predict every possible chemical reaction, I recommend using a database of supported reactions. This makes your program much more manageable and reduces the likelihood of incorrect chemical predictions.
+
+2. Download your Python program
+chemistry_reaction_predictor.py
+
+Complete Drafter website source code · Python
+Created
+Download the Python program
+
+The program currently supports these four reactions:
+
+Reaction
+
+Reactants
+
+Products
+
+Acid-base
+
+HCl + NaOH
+
+NaCl + H₂O
+
+Precipitation
+
+BaCl₂ + Na₂SO₄
+
+BaSO₄ + NaCl
+
+Single replacement
+
+Zn + CuSO₄
+
+ZnSO₄ + Cu
+
+Combustion
+
+CH₄ + O₂
+
+CO₂ + H₂O
+
+It also calculates:
+
+The limiting reactant.
+
+The theoretical yield of each product.
+
+The remaining amounts of reactants.
+
+Heat released when enthalpy information is available.
+
+3. How to run the program
+I recommend using Thonny, as your assignment suggests.
+
+Download the Python file.
+
+Open it in Thonny.
+
+Make sure Drafter is installed.
+
+Run the program.
+
+Open the local website that launches.
+
+Test each reaction and navigate through all the pages.
+
+The code follows Drafter's documented @route, Page, Button, TextBox, and SelectBox structures. 
+
+Drafter Documentation
++3
+
+Testing note: I checked the Python syntax and tested the chemistry calculation functions successfully. I could not launch the actual website in this environment because Drafter is not installed here, so you will still need to test the website in Thonny.
+
+4. Important assignment requirements
+Before submitting, make sure you address these items:
+
+
+Test all seven routes.
+
+Test all four supported reactions.
+
+Test invalid reactants and zero or negative quantities.
+
+Confirm reaction history works.
+
+Deploy the website to a public GitHub repository.
+
+Include both original project worksheets in the repository.
+
+Include the complete ChatGPT conversation in a clearly labeled file (for example, LLM_Conversation.txt).
+
+Record a video demonstrating how the website meets the requirements.
+One final recommendation: Your assignment emphasizes understanding the code generated by an LLM. Make sure you understand how calculate_reaction_result, find_reaction, and the ReactionResult dataclass work. Those are the most important parts of your program, and they are likely to be useful when explaining your project to your instructor.
+
+
+chemistry_reaction_predictor.py
+Code
+
+
+
+
